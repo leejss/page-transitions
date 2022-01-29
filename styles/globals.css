@@ -14,3 +14,28 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 6rem;
+}
+
+.home {
+  height: 100vh;
+
+  /* background-color: cadetblue; */
+}
+
+.about {
+  height: 100vh;
+
+  /* background-color: coral; */
+}
+
+.example {
+  height: 100vh;
+
+  /* background-color: chartreuse; */
+}

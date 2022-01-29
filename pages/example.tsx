@@ -1,13 +1,12 @@
-import type { FC } from "react";
 import React from "react";
 import PageContainer from "../components/PageContainer";
 
-const HomePage = () => {
+const ExamplePage = () => {
   return (
     <PageContainer>
-      <div className="home page">Home Page</div>
+      <div className="example page">Example Page</div>
     </PageContainer>
   );
 };
 
-export default HomePage;
+export default ExamplePage;
