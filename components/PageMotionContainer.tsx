@@ -1,22 +1,20 @@
 import type { FC } from "react";
 import type { Variants, Transition } from "framer-motion";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import React from "react";
 
 const variants: Variants = {
   initial: {
     opacity: 0.1,
     x: -100,
-    y: 0,
   },
-  enter: {
+  start: {
     opacity: 1,
     x: 0,
-    y: 0,
   },
-  exit: {
+  end: {
     opacity: 0,
-    x: 0,
+    // x: 200,
     y: -100,
   },
 };
@@ -25,13 +23,13 @@ const transition: Transition = {
   ease: "easeInOut",
 };
 
-const PageContainer: FC = ({ children }) => {
+const PageMotionContainer: FC = ({ children }) => {
   return (
     <motion.main
       variants={variants}
       initial="initial"
-      animate="enter"
-      exit="exit"
+      animate="start"
+      exit="end"
       transition={transition}
     >
       {children}
@@ -39,4 +37,4 @@ const PageContainer: FC = ({ children }) => {
   );
 };
 
-export default PageContainer;
+export default PageMotionContainer;

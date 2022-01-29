@@ -1,11 +1,12 @@
 import React from "react";
-import PageContainer from "../components/PageContainer";
+import PageCSSContainer from "../components/PageCSSContainer";
+import PageMotionContainer from "../components/PageMotionContainer";
 
 const AboutPage = () => {
   return (
-    <PageContainer>
+    <PageMotionContainer>
       <div className="about page">About Page</div>
-    </PageContainer>
+    </PageMotionContainer>
   );
 };
 

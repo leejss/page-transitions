@@ -1,11 +1,12 @@
 import React from "react";
-import PageContainer from "../components/PageContainer";
+import PageCSSContainer from "../components/PageCSSContainer";
+import PageMotionContainer from "../components/PageMotionContainer";
 
 const ExamplePage = () => {
   return (
-    <PageContainer>
+    <PageMotionContainer>
       <div className="example page">Example Page</div>
-    </PageContainer>
+    </PageMotionContainer>
   );
 };
 

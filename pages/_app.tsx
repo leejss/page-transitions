@@ -3,13 +3,17 @@ import type { AppProps } from "next/app";
 import Layout from "../components/Layout";
 import { AnimatePresence } from "framer-motion";
 
-function MyApp({ Component, pageProps }: AppProps) {
+function MyApp({ Component, pageProps, router }: AppProps) {
   return (
-    <AnimatePresence>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
-    </AnimatePresence>
+    <Layout>
+      <AnimatePresence
+        exitBeforeEnter
+        initial={false}
+        onExitComplete={() => console.log("exit")}
+      >
+        <Component {...pageProps} key={router.route} />
+      </AnimatePresence>
+    </Layout>
   );
 }
 

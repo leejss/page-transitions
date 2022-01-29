@@ -1,0 +1,17 @@
+@keyframes slideIn {
+  from {
+    margin-right: 50%;
+    opacity: 0;
+    /* width: 100%; */
+  }
+  to {
+    margin-right: 0;
+    opacity: 1;
+    /* width: 100%; */
+  }
+}
+
+.page {
+  animation-duration: 1s;
+  animation-name: slideIn;
+}

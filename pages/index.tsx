@@ -1,12 +1,13 @@
 import type { FC } from "react";
 import React from "react";
-import PageContainer from "../components/PageContainer";
+import PageCSSContainer from "../components/PageCSSContainer";
+import PageMotionContainer from "../components/PageMotionContainer";
 
 const HomePage = () => {
   return (
-    <PageContainer>
+    <PageMotionContainer>
       <div className="home page">Home Page</div>
-    </PageContainer>
+    </PageMotionContainer>
   );
 };
 
